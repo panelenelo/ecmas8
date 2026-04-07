@@ -1,0 +1,37 @@
+body{
+    background-image: url("../data/wallhaven-x1xvjo.jpg");
+    background-size: cover;
+
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: lighter;
+    color: aliceblue;
+    text-shadow: 0 0 3px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#decrement-btn, #increment-btn, #reset-btn, #save-btn {
+    background-color: silver;
+
+    border: 2px solid rgb(60, 92, 150);
+    border-radius: 10px;
+
+    padding: 5px 10px;
+}
+
+#decrement-btn:hover, #increment-btn:hover, #reset-btn:hover, #save-btn:hover {
+    background-color: rgb(146, 145, 145);
+    border: 2px solid rgb(87, 134, 221);
+}
