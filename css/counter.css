@@ -17,7 +17,7 @@ body{
 
 #buttons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     margin-top: 20px;
 }
@@ -34,4 +34,8 @@ body{
 #decrement-btn:hover, #increment-btn:hover, #reset-btn:hover, #save-btn:hover {
     background-color: rgb(146, 145, 145);
     border: 2px solid rgb(87, 134, 221);
+}
+
+#increment-btn:active, #decrement-btn:active, #reset-btn:active, #save-btn:active {
+    background-color: rgb(204, 204, 204);    
 }
