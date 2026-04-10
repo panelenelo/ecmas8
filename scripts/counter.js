@@ -2,7 +2,7 @@
 let count=0;
 let countEl=document.getElementById("count-el");
 
-console.log(countEl);
+console.log(document.querySelector("button"));
 
 function increment(){
     count++;
@@ -25,3 +25,4 @@ function reset(){
 function save(){
     console.log(count);
 }
+
