@@ -14,9 +14,15 @@ function unsubscribe(){
 }
 
 function calculate(){
-    let price = document.getElementById("shipOrder").valueAsNumber;
+    let price = document.querySelector("#shipOrder").valueAsNumber;
+    if(price < 0 || isNaN(price)){
+        document.querySelector("#js-shipPrice").innerHTML = "Invalid price";
+        return;
+    }
+
     if(price < 40){
         price = price + 10;
     }
-    document.querySelector("#js-shipPrice").innerHTML = price;
+    document.querySelector("#js-shipPrice").innerHTML = `R$${price}`;
 }
+
