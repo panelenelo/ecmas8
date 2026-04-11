@@ -1,7 +1,7 @@
 
 function subscribe(){
-    if(document.querySelector("#ytsub").innerHTML == "Subscribe"){
-        document.querySelector("#ytsub")
+    if(document.querySelector("#js-ytsub").innerText === "Subscribe"){
+        document.querySelector("#js-ytsub")
         .innerHTML = "Unsub";
     }else{
         unsubscribe();
@@ -9,12 +9,12 @@ function subscribe(){
 }
 
 function unsubscribe(){
-    document.querySelector("#ytsub")
+    document.querySelector("#js-ytsub")
         .innerHTML = "Subscribe";
 }
 
 function calculate(){
-    let price = document.querySelector("#shipOrder").valueAsNumber;
+    const price = document.querySelector("#shipOrder").valueAsNumber;
     if(price < 0 || isNaN(price)){
         document.querySelector("#js-shipPrice").innerHTML = "Invalid price";
         return;
