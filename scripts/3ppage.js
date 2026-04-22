@@ -14,7 +14,7 @@ function unsubscribe(){
 }
 
 function calculate(){
-    const price = document.querySelector("#shipOrder").valueAsNumber;
+    var price = document.querySelector("#shipOrder").valueAsNumber;
     if(price < 0 || isNaN(price)){
         document.querySelector("#js-shipPrice").innerHTML = "Invalid price";
         return;
