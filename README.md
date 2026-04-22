@@ -1,2 +1,1 @@
-# Study for javascript on web pages
-
+# Study for web pages with javascript
