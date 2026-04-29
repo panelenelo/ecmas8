@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title>Rock Paper and Scissors</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/rps.css">
     </head>
     <body>
-        <div id="hero">
-            <h1>Rock Paper Scissors</h1>
-            <button>Rock</button>
-            <button>Paper</button>
-            <button>Scissors</button>
-            <h1>Wins: <p id="wins"></p>, Losses: <p id="losses"></p>, Ties: <p id="ties"></p></h1>
-            <button>Reset Score</button>
+        <div id="hero" class="fontStyle">
+            <div class="sectore">
+                <h1>Rock Paper Scissors</h1>
+                <button class="btn-glass" onclick="rps(0)">Rock</button>
+                <button class="btn-glass" onclick="rps(1)">Paper</button>
+                <button class="btn-glass" onclick="rps(2)">Scissors</button>
+                <p>Your choice: <span id="usr-choice"></span>, computer choice: <span id="cmptr-choice"></span>.</p>
+            </div>
+            <div class="sectore">
+                <h2>Wins: <span id="wins">0</span>, 
+                    Losses: <span id="losses">0</span>, 
+                    Ties: <span id="ties">0</span></h2>
+                <button class="btn-glass" onclick="reset()">Reset Score</button>
+            </div>
         </div>
+        <button class="btn-dip">Mangoes</button>
+        <script src="./scripts/rps.js"></script>
     </body>
 </html>
